@@ -17,10 +17,9 @@
     "react-scripts": "2.1.8"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "client": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "react-scripts start & nodemon ./server/index.js --exec babel-node"
   },
   "eslintConfig": {
     "extends": "react-app"

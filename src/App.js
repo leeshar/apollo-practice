@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Apollo from "./Apollo";
 import { ApolloProvider } from "react-apollo";
 import Main from "pages/Main";
+import "css/App.css";
 
 class App extends Component {
   render() {

@@ -19,7 +19,7 @@
   "scripts": {
     "client": "react-scripts start",
     "build": "react-scripts build",
-    "start": "react-scripts start & nodemon ./server/index.js --exec babel-node"
+    "start": "NODE_PATH = src react-scripts start & nodemon ./server/index.js --exec babel-node"
   },
   "eslintConfig": {
     "extends": "react-app"

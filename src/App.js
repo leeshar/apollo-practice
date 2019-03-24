@@ -11,7 +11,7 @@ class App extends Component {
       <ApolloProvider client={Apollo}>
         <Router>
           <div className="App">
-            <Route exact path="/" component={Main} />
+            <Route path="/" component={Main} />
           </div>
         </Router>
       </ApolloProvider>

@@ -1,4 +1,4 @@
-- My practice Repo
+My practice Repo
 
 # Back-End
 

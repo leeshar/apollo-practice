@@ -22,6 +22,8 @@
 }
 
 .main-header .header-ul .header-li {
+  cursor: pointer;
+  color: #333;
   padding: 5px;
 }
 /*# sourceMappingURL=Header.css.map */

@@ -1,0 +1,14 @@
+.main-nav {
+    border: 1px solid #333;
+
+    ul {
+        height: 50px;
+        align-items: center;
+        display: flex;
+
+        li {
+            color: #333;
+            padding: 15px;
+        }
+    }
+}

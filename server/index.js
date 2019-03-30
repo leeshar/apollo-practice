@@ -6,7 +6,13 @@ const start = async () => {
   await mongoose.connect(
     "mongodb://owner:ownertest1@ds123896.mlab.com:23896/owner"
   );
-  const book = mongoose.model("book", { title: String, author: String });
+  const book = mongoose.model("book", {
+    title: String,
+    author: String,
+    content: String,
+    price: Number,
+    img_path: String
+  });
   const user = mongoose.model("user", {
     id: String,
     pwd: String,

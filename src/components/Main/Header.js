@@ -21,7 +21,9 @@ const Header = props => (
         <li className="header-li">
           {localStorage.getItem("name")}님 반갑습니다.
         </li>
-        <li className="header-li">로그아웃</li>
+        <li className="header-li" onClick={props.logout}>
+          로그아웃
+        </li>
       </ul>
     )}
   </header>

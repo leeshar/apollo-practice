@@ -11,11 +11,17 @@ const IS_LOGGED_IN = gql`
 `;
 
 export default class Main extends Component {
+  logout = () => {
+    localStorage.clear();
+    window.location.href = "/";
+  };
   render() {
     return (
       <div id="main">
         <Query query={IS_LOGGED_IN}>
-          {({ data }) => <Header logged={data.isLoggedIn} />}
+          {({ data }) => (
+            <Header logged={data.isLoggedIn} logout={this.logout} />
+          )}
         </Query>
         <Section />
         <footer>footer</footer>

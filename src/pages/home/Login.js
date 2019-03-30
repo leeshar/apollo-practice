@@ -50,6 +50,7 @@ export default class Login extends Component {
               localStorage.setItem("token", login[0]._id);
               localStorage.setItem("name", login[0].name);
               client.writeData({ data: { isLoggedIn: true } });
+              window.location.href = "/";
             }}
           >
             {(login, { loading, error }) => {

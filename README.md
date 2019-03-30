@@ -10,6 +10,7 @@ My practice Repo
 
 * React.js
 * react-apollo
+* SASS
 
 
 ## 아폴로와 Graphql을 이용해서 작은 프로젝트 진행 

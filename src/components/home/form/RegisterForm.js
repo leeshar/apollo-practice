@@ -2,7 +2,7 @@ import React from "react";
 import Input from "components/home/input/Input";
 
 const RegisterForm = props => (
-  <form onSubmit={e => props.onSubmit(e, props.newUser)}>
+  <form onSubmit={e => props.onSubmit(e, props.register)}>
     <label htmlFor="reg-id">아이디</label>
     <Input
       type="text"

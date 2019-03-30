@@ -11,7 +11,7 @@ const resolvers = {
     addBook: async (obj, args, ctx) => {
       return await new ctx.book(args).save();
     },
-    newUser: async (obj, args, ctx) => {
+    register: async (obj, args, ctx) => {
       return await new ctx.user(args).save();
     },
     login: async (obj, args, ctx) => {

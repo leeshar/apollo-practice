@@ -1,4 +1,5 @@
 import React from "react";
+import "css/pages/home/Home.css";
 
 const Home = () => (
   <div className="home">

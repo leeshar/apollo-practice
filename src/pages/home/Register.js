@@ -4,8 +4,8 @@ import { Mutation } from "react-apollo";
 import gql from "graphql-tag";
 
 const NEW_USER = gql`
-  mutation newUser($id: String!, $pwd: String!, $name: String!) {
-    newUser(id: $id, pwd: $pwd, name: $name) {
+  mutation register($id: String!, $pwd: String!, $name: String!) {
+    register(id: $id, pwd: $pwd, name: $name) {
       id
       pwd
       name
@@ -37,11 +37,11 @@ export default class Register extends Component {
       }
     });
   };
-  onSubmit = async (e, newUser) => {
+  onSubmit = async (e, register) => {
     {
       await e.preventDefault();
       const { id, pwd, name } = await this.state.user;
-      await newUser({
+      await register({
         variables: {
           id,
           pwd,
@@ -64,12 +64,12 @@ export default class Register extends Component {
         <h1>회원가입</h1>
         <div className="register-box">
           <Mutation mutation={NEW_USER}>
-            {(newUser, { data }) => (
+            {(register, { data }) => (
               <Form
                 user={user}
                 onSubmit={this.onSubmit}
                 handleChange={this.handleChange}
-                newUser={newUser}
+                register={register}
               />
             )}
           </Mutation>

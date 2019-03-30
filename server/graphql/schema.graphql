@@ -5,7 +5,7 @@ type Query{
 ,
 type Mutation {
     addBook(title:String!, author:String!, content:String!, price:Int!, img_path:String!): Book,
-    newUser(id:String!, pwd:String!, name:String!): User,
+    register(id:String!, pwd:String!, name:String!): User,
     login(id:String!, pwd:String!): [Login]
 },
 type Book{

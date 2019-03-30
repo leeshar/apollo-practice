@@ -1,25 +1,23 @@
-type Book{
-    title: String!,
-    author: String!
-},
 type Query{
     books: [Book]!,
     findbook(author:String!): [Book]
 }
 ,
 type Mutation {
-    addBook(title:String!, author:String!): Book
-}
-,
+    addBook(title:String!, author:String!): Book,
+    newUser(id:String!, pwd:String!, name:String!): User,
+    login(id:String!, pwd:String!): [Login]
+},
+type Book{
+    title: String!,
+    author: String!
+},
 type User{
     id: String!,
     pwd: String!,
     name: String!
 },
-type Mutation {
-    newUser(id:String!, pwd:String!, name:String!): User
-},
 type Login{
-    id: String!,
-    pwd: String!
+    _id: String!,
+    name: String!
 }

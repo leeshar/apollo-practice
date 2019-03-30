@@ -12,10 +12,21 @@ const Home = Loadable(() => import("pages/Home"), {
 const Register = Loadable(() => import("pages/home/Register"), {
   LoadingComponent: Loading
 });
+
+const Welcome = Loadable(() => import("pages/home/Welcome"), {
+  LoadingComponent: Loading
+});
+
+const Login = Loadable(() => import("pages/home/Login"), {
+  LoadingComponent: Loading
+});
+
 const Section = () => (
   <section className="main-section">
     <Route exact path="/" component={Home} />
     <Route path="/home/register" component={Register} />
+    <Route path="/home/welcome" component={Welcome} />
+    <Route path="/home/login" component={Login} />
   </section>
 );
 

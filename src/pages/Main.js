@@ -1,20 +1,22 @@
 import React, { Component } from "react";
 import Header from "components/main/Header";
 import Section from "components/main/Section";
+import gql from "graphql-tag";
+import { Query } from "react-apollo";
+
+const IS_LOGGED_IN = gql`
+  query IsUserLoggedIn {
+    isLoggedIn @client
+  }
+`;
 
 export default class Main extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      logged: false,
-      name: ""
-    };
-  }
   render() {
-    const { logged, name } = this.state;
     return (
       <div id="main">
-        <Header logged={logged} name={name} />
+        <Query query={IS_LOGGED_IN}>
+          {({ data }) => <Header logged={data.isLoggedIn} />}
+        </Query>
         <Section />
         <footer>footer</footer>
       </div>

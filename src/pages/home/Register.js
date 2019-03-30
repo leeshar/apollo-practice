@@ -37,24 +37,24 @@ export default class Register extends Component {
       }
     });
   };
-  onSubmit = (e, newUser) => {
+  onSubmit = async (e, newUser) => {
     {
-      e.preventDefault();
-      const { id, pwd, name } = this.state.user;
-      newUser({
+      await e.preventDefault();
+      const { id, pwd, name } = await this.state.user;
+      await newUser({
         variables: {
           id,
           pwd,
           name
         }
       });
-      this.setState({
+      await this.setState({
         id: "",
         pwd: "",
         pwdCheck: "",
         name: ""
       });
-      window.location.href = "/welcome";
+      window.location.href = await "/home/welcome";
     }
   };
   render() {

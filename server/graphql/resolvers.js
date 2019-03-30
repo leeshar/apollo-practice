@@ -13,6 +13,9 @@ const resolvers = {
     },
     newUser: async (obj, args, ctx) => {
       return await new ctx.user(args).save();
+    },
+    login: async (obj, args, ctx) => {
+      return await ctx.user.find({ id: args.id, pwd: args.pwd });
     }
   }
 };

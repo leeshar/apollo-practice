@@ -1,5 +1,8 @@
 My practice Repo
 
+
+## 아폴로와 Graphql을 이용해서 작은 프로젝트 진행 
+
 # Back-End
 
 * Node.js
@@ -12,12 +15,6 @@ My practice Repo
 * react-apollo
 * SASS
 
-
-## 아폴로와 Graphql을 이용해서 작은 프로젝트 진행 
-
-- 로그인
-- 로그아웃
-- 책 리스트
 
 
 ### 개발순서 ( Branch )

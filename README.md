@@ -1,4 +1,4 @@
-# My practice Repo
+- My practice Repo
 
 # Back-End
 
@@ -14,7 +14,7 @@
 
 <branch> === develop <= 개발 , master <= 최종본
 
-## 아폻로와 Graphql을 이용해서 작은 프로젝트 진행 
+## 아폴로와 Graphql을 이용해서 작은 프로젝트 진행 
 
 - 로그인
 - 로그아웃

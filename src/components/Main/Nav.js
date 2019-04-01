@@ -9,7 +9,10 @@ const Nav = () => (
         <li>Home</li>
       </Link>
       <Link to="/products">
-        <li>Book</li>
+        <li>책방</li>
+      </Link>
+      <Link to="/community">
+        <li>커뮤니티</li>
       </Link>
     </ul>
   </nav>

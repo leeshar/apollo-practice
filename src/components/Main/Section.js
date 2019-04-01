@@ -24,6 +24,10 @@ const Login = Loadable(() => import("pages/home/Login"), {
 const BookList = Loadable(() => import("pages/books/BookList"), {
   LoadingComponent: Loading
 });
+
+const Community = Loadable(() => import("pages/community/CommunityBoard"), {
+  LoadingComponent: Loading
+});
 const Section = () => (
   <section className="main-section">
     <Route exact path="/" component={Home} />
@@ -31,6 +35,7 @@ const Section = () => (
     <Route path="/home/welcome" component={Welcome} />
     <Route path="/home/login" component={Login} />
     <Route path="/products" component={BookList} />
+    <Route path="/community" component={Community} />
   </section>
 );
 

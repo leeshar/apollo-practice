@@ -16,6 +16,9 @@ const resolvers = {
     },
     login: async (obj, args, ctx) => {
       return await ctx.user.find({ id: args.id, pwd: args.pwd });
+    },
+    writeCommunity: async (obj, args, ctx) => {
+      return await new ctx.community(args).save();
     }
   }
 };
